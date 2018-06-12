@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro Alumnos</title>
+</head>
+<body>
+        <header>
+                <!-- ---------------------------------------- MENU ---------------------------------------- -->
+                <div class="hide-on-med-and-down">
+                        <div class="navbar-fixed left-align">
+                                <nav class="nav-extended blue accent-1 naxExtension">
+                                    <div class="nav-wrapper blue darken-4">
+                                        <div class="row">
+                                        <div  class="brand-logo col l1">
+                                            <img src="media/img/logo.png" class="responsive-img" alt="" style="width : 100%;">
+                                        </div>
+                                    </div>
+                                        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                                            <i class="material-icons">menu</i>
+                                        </a>
+                                        <ul class="right hide-on-med-and-down">
+                                            <li>
+                                                <a href="registrarAlumno.html">Registrar Alumno</a>
+                                            </li>
+                                            <li>
+                                                    <a href="registrarMaestro.html">Registrar Maestro</a>
+                                            </li>
+                                            <li>
+                                                    <a href="registrarAdministrativo.html">Registrar Administrativo</a>
+                                            </li>
+                                            <li>
+                                                    <a href="registrarPersonal.html">Registrar Personal</a>
+                                            </li>
+                                            <li>
+                                                    <a href="consultas.html">Consultas</a>
+                                            </li>
+                                                         
+                
+                                        </ul>
+                                    </div>
+                                    <div class="nav-content">
+                                    </div>
+                                </nav>
+                        </div>
+                    </div>
+                    <div class="show-on-medium-and-down hide-on-large-only">
+                            <div class="navbar-fixed left-align">
+                                    <nav class="nav-extended blue accent-1">
+                                        <nav class="nav-extended blue accent-1">
+                                            <div class="nav-wrapper blue darken-4">
+                                                <a href="index.html" class="brand-logo center-align">
+                                                    <img src="media/img/logo.png" class="responsive-img" alt="" style="width : 20%;">
+                                                </a>
+                                                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                                                    <i class="material-icons">menu</i>
+                                                </a>
+                                                <ul class="right hide-on-med-and-down">
+                                                        <li>
+                                                                <a href="registrarAlumno.html">Registrar Alumno</a>
+                                                            </li>
+                                                            <li>
+                                                                    <a href="registrarMaestro.html">Registrar Maestro</a>
+                                                            </li>
+                                                            <li>
+                                                                    <a href="registrarAdministrativo.html">Registrar Administrativo</a>
+                                                            </li>
+                                                            <li>
+                                                                    <a href="registrarPersonal.html">Registrar Personal</a>
+                                                            </li>
+                                                            <li>
+                                                                    <a href="consultas.html">Consultas</a>
+                                                            </li>
+                                                </ul>
+                                            </div>
+                                            <div class="nav-content">
+                                            </div>
+                                        </nav>
+                                </div>
+                    </div>
+                <ul class="sidenav" id="mobile-demo">
+                        <li>
+                                <a href="registrarAlumno.html">Registrar Alumno</a>
+                            </li>
+                            <li>
+                                    <a href="registrarMaestro.html">Registrar Maestro</a>
+                            </li>
+                            <li>
+                                    <a href="registrarAdministrativo.html">Registrar Administrativo</a>
+                            </li>
+                            <li>
+                                    <a href="registrarPersonal.html">Registrar Personal</a>
+                            </li>
+                            <li>
+                                    <a href="consultas.html">Consultas</a>
+                            </li>
+                </ul>
+            
+               
+                <!-- ---------------------------------------- ---- ---------------------------------------- -->
+            </header>
+    <main>
+    <div class="container">
+            <h3 class="center-align">Registro de Administrativos</h3>
+            <div id="mensaje"></div>
+            <div class="row">
+                <div class="col l6 m10 offset-l3 offset-m1">
+            <form action="crudManager.php" method="POST" enctype="multipart/form-data" id="formularioRegistro">
+                <div class="input-field">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+            <div class="input-field">
+                <label for="apellidoP">Apellido Paterno</label>
+                <input type="text" name="apellidoP" id="apellidoP">
+                </div>
+                <div class="input-field">
+                <label for="apellidoM">Apellido Materno</label>
+                <input type="text" name="apellidoM" id="apellidoM">
+                </div>
+                <div class="input-field">
+                <label for="telefono">Teléfono</label>
+                <input type="text" maxlength='10'name="telefono" id="telefono">
+                </div>
+                <div class="input-field">
+                <label for="celular">Celular</label>
+                <input type="text" maxlength='10' name="celular" id="celular">
+                </div>
+                <div class="input-field">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+                </div>
+                <div class="input-field">
+                <label for="fecha_nacimiento">Fecha de Nacimiento</label>
+                <input type="text" class="datepicker" name="fecha_nacimiento" id="fecha_nacimiento">
+                </div>
+                <div class="input-field">
+                <label for="fecha_ingreso">Fecha de ingreso</label>
+                <input type="text" class="datepicker" name="fecha_ingreso" id="fecha_ingreso">
+                </div>
+                <div class="file-field input-field">
+                    <p>Fotografía</p>
+                        <div class="btn orange darken-4">
+                          <span>Seleccionar</span>
+                          <input type="file" id="foto" name="foto">
+                        </div>
+                        <div class="file-path-wrapper">
+                          <input class="file-path validate" type="text">
+                        </div>
+                      </div>
+            <div class="input-field center-align">
+                <a  name="registrar_administrativo" class="btn small orange darken-4" id="registrar_administrativo" onclick="registrarAdministrativos('formularioRegistro');">Enviar</a>
+            </div>
+            </form>
+        </div>
+        </div>
+    </div>
+</main>
+<footer></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="jssinuhe/main.js"></script>
+    <script src="jssinuhe/consultas.js"></script>
+</body>
+</html>
+
+
+
+
+

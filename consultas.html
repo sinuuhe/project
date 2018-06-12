@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Consultas</title>
+</head>
+<body>
+        <header>
+                <!-- ---------------------------------------- MENU ---------------------------------------- -->
+                <div class="hide-on-med-and-down">
+                        <div class="navbar-fixed left-align">
+                                <nav class="nav-extended blue accent-1 naxExtension">
+                                    <div class="nav-wrapper blue darken-4">
+                                        <div class="row">
+                                        <div  class="brand-logo col l1">
+                                            <img src="media/img/logo.png" class="responsive-img" alt="" style="width : 100%;">
+                                        </div>
+                                    </div>
+                                        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                                            <i class="material-icons">menu</i>
+                                        </a>
+                                        <ul class="right hide-on-med-and-down">
+                                            <li>
+                                                <a href="registrarAlumno.html">Registrar Alumno</a>
+                                            </li>
+                                            <li>
+                                                    <a href="registrarMaestro.html">Registrar Maestro</a>
+                                            </li>
+                                            <li>
+                                                    <a href="registrarAdministrativo.html">Registrar Administrativo</a>
+                                            </li>
+                                            <li>
+                                                    <a href="registrarPersonal.html">Registrar Personal</a>
+                                            </li>
+                                            <li>
+                                                    <a href="consultas.html">Consultas</a>
+                                            </li>
+                                                         
+                
+                                        </ul>
+                                    </div>
+                                    <div class="nav-content">
+                                    </div>
+                                </nav>
+                        </div>
+                    </div>
+                    <div class="show-on-medium-and-down hide-on-large-only">
+                            <div class="navbar-fixed left-align">
+                                    <nav class="nav-extended blue accent-1">
+                                        <nav class="nav-extended blue accent-1">
+                                            <div class="nav-wrapper blue darken-4">
+                                                <a href="index.html" class="brand-logo center-align">
+                                                    <img src="media/img/logo.png" class="responsive-img" alt="" style="width : 20%;">
+                                                </a>
+                                                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                                                    <i class="material-icons">menu</i>
+                                                </a>
+                                                <ul class="right hide-on-med-and-down">
+                                                        <li>
+                                                                <a href="registrarAlumno.html">Registrar Alumno</a>
+                                                            </li>
+                                                            <li>
+                                                                    <a href="registrarMaestro.html">Registrar Maestro</a>
+                                                            </li>
+                                                            <li>
+                                                                    <a href="registrarAdministrativo.html">Registrar Administrativo</a>
+                                                            </li>
+                                                            <li>
+                                                                    <a href="registrarPersonal.html">Registrar Personal</a>
+                                                            </li>
+                                                            <li>
+                                                                    <a href="consultas.html">Consultas</a>
+                                                            </li>
+                                                </ul>
+                                            </div>
+                                            <div class="nav-content">
+                                            </div>
+                                        </nav>
+                                </div>
+                    </div>
+                <ul class="sidenav" id="mobile-demo">
+                        <li>
+                                <a href="registrarAlumno.html">Registrar Alumno</a>
+                            </li>
+                            <li>
+                                    <a href="registrarMaestro.html">Registrar Maestro</a>
+                            </li>
+                            <li>
+                                    <a href="registrarAdministrativo.html">Registrar Administrativo</a>
+                            </li>
+                            <li>
+                                    <a href="registrarPersonal.html">Registrar Personal</a>
+                            </li>
+                            <li>
+                                    <a href="consultas.html">Consultas</a>
+                            </li>
+                </ul>
+            
+               
+                <!-- ---------------------------------------- ---- ---------------------------------------- -->
+            </header>
+    <main>
+        
+        <div class="container center-align">
+                <h3 class="center-align col l12 m12 s12" id="tituo">Consultas</h3>
+                <div class="row">
+                    <p class="col l4 m12 s12">Seleccione elemento a buscar:</p>
+                        <select name="selectElemento" id="selectElemento" class="col l12 m12 s12">
+                                <option value=1>Alumnos</option>
+                                <option value=2>Maestros</option>
+                                <option value=3>Administrativos</option>
+                                <option value=4>Personal</option>
+                            </select>
+                            <a onclick="buscar('selectElemento');" class="col l4 m8 s8 offset-m2 offset-s2 offset-l4 btn orange darken-4">Buscar</a>
+                </div>
+        </div>
+            
+            <div class="">
+                    <div class="row">
+                            <div id="resultadoEspecifico" class="col l4 offset-l1 m12 s12">
+                                    <h5>Aquí se mostrará información más detallada.</h5>
+                                </div>
+                           
+                            <table class="striped highlight centered col l5  offset-l1 m12 s12 responsive-table" id="resultado">
+                                
+                                </table> </div>
+            </div>
+         
+    </main>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="jssinuhe/consultas.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+      <script src="jssinuhe/main.js"></script>
+</body>
+</html>
