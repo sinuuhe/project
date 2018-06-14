@@ -1,0 +1,35 @@
+/*Cuando se pase por encima de las filas de la tabla principal estas cambiaran de color*/
+.myCollapse:hover{
+	background-color: #bdbdbd;
+}
+
+/*El cursor cambia de forma cuando pasa sobre las filas de la tabla*/
+.myCollapse{
+	cursor: pointer;
+}
+
+/*Cambiar el color del nav menu a azul, como el logo de la empresa*/
+.nav-wrapper , .nav-content , .nav-extended{
+    background-color: #0086c9 !important;
+}
+
+/* Cambia el color a blanco cuando este esta en FOCUS (Solo para busqueda) */
+.input-field input[type=text]:focus{
+     border-bottom: 1px solid #FFF !important;
+     box-shadow: 0 1px 0 0 #FFF !important;
+}
+
+/* Cambia el color a azul cuando esta en FOCUS (Campos de formularios) */
+.form-group input[type=text]:focus, input[type=number]:focus, input[type=password]:focus, select:focus{
+     border-bottom: 1px solid #0086c9 !important;
+     box-shadow: 0 1px 0 0 #0086c9 !important;
+}
+
+.nav-wrapper .brand-logo img {
+    height: 64px !important;
+}
+
+.card_box{
+    overflow: hidden;
+    height: 1%;
+}

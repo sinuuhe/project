@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Niveles</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/materialize.min.css" />
+	<link rel="stylesheet" href="css/estilos.css" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+	<header>
+		<nav>
+			<div class="nav-wrapper row">
+				<a href="#!" class="brand-logo col l2 offset-l5 xl2 offset-xl5 hide-on-med-and-down"><img class="responsive-img" src="img/logo.png"></a>
+				<div class="col row">
+					<a id="sidemenu" href="#" data-activates="slide-out" class="hide-on-large-only"><i class="material-icons">menu</i></a>
+					
+				</div>
+
+				<ul class="right col l6 xl6">
+					<li class="col l5 offset-l1 xl5 offset-xl1">   
+						<div class="center row">
+							<div class="input-field">
+								<i class="material-icons prefix">search</i>
+								<input id="buscar_html" type="text" placeholder="Buscar">
+							</div>
+						</div>            
+					</li>
+					<li class="col l6 xl6 hide-on-med-and-down">
+						<a href="#modal1" class="modal-trigger waves-effect waves-light white-text">Agregar nivel<i class="material-icons left">add_circle</i></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<ul id="slide-out" class="side-nav">
+			<li><div class="divider"></div></li>
+			<li class="col l6 xl6">
+				<a href="#modal1" class="modal-trigger waves-effect waves-light black-text">Agregar nivel<i class="material-icons left">add_circle</i></a>
+			</li>
+			<li><div class="divider"></div></li>
+		</ul>
+		
+	</header><br/>
+
+	<div id="precarga" class="container row">
+		<div class="col s2 offset-s5 m2 offset-m5 l2 offset-l5 xl2 offset-xl5">
+			<div class="preloader-wrapper big active">
+				<div class="spinner-layer spinner-blue-only">
+					<div class="circle-clipper left">
+						<div class="circle"></div>
+					</div>
+					<div class="gap-patch">
+						<div class="circle"></div>
+					</div><div class="circle-clipper right">
+					<div class="circle"></div>
+					</div>
+				</div>
+			</div>
+			<p>Cargando...</p>
+		</div>
+	</div>
+
+	<div id="main-tabla" class="container">
+
+	</div>
+
+	<!-- Modal Busqueda por unidades -->
+	<div id="modal1" class="modal modal-fixed-footer">
+		<div class="modal-content row">
+			<h4 class="center-align">Agregar nivel</h4>
+			<form id="nivel_data">
+				<div class="form-group col s12 m6 l4 xl4">
+					<label for="nombre">Nombre</label>
+					<input placeholder="Nombre nivel" id="nombre" name="nombre" type="text" class="validate center-align">
+					
+				</div>
+
+				<div class="form-group col s12 m6 l4 xl4">
+					<label for="curso">Curso</label>
+					<input placeholder="Curso" id="curso" name="curso" type="text" class="validate center-align">
+					
+				</div>
+
+				<div class="form-group col s12 m6 l4 xl4">
+					<label for="duracion">Duración (meses)</label>
+					<input placeholder="Duracion curso" id="duracion" name="duracion" type="number" class="validate center-align" min="0" max="12">
+					
+				</div>
+
+				<div class="form-group col s12 m6 l4 xl4">
+					<label for="material">Material/Libro</label>
+					<input placeholder="Material/Libro" id="material" name="material" type="text" class="validate center-align">
+					
+				</div>
+
+				<div class="form-group col s12 m6 l4 xl4">
+					<label for="costo">Costo</label>
+					<input placeholder="Costo nivel" id="costo" name="costo" type="number" class="validate center-align" min="0" max="9999">
+				</div>
+
+				<div class="form-group col s12 m6 l4 xl4">
+					<label for="inscripcion">Inscripción</label>
+					<input placeholder="Inscripción nivel" id="inscripcion" name="inscripcion" type="number" class="validate center-align" min="0" max="9999">
+				</div>
+
+				<div class="form-group col s12 m6 offset-m3 l4 offset-l4 xl4 offset-xl4">
+					<label for="ducumento">Documento otorgado</label>
+					<input placeholder="Documento otorgado" id="ducumento" name="ducumento" type="text" class="validate center-align">
+				</div>
+			</form>
+			
+
+		</div>
+		<div class="modal-footer">
+			<a id="guardar_nivel" class="modal-action waves-effect waves-light btn blue darken-3">Guardar</a>
+			<a class="modal-action modal-close waves-effect waves-light btn red accent-4">Cancelar</a>
+		</div>
+	</div>
+
+	
+	<script src="js//jquery-3.3.1.min.js"></script>
+	<script src="js//materialize.min.js"></script>
+	<script src="js//funcionesNiveles.js?n=1"></script>
+</body>
+</html>
